@@ -243,3 +243,11 @@ WHERE ENAME LIKE 'R%'
 GROUP BY Department, CITY
 
 SELECT * FROM EMP
+
+
+--Extra 
+
+SELECT EName, COUNT(*) AS Name_Count
+FROM EMP
+GROUP BY EName
+HAVING COUNT(*) > 1;
